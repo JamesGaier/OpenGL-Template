@@ -13,12 +13,7 @@ AlignOperands: AlignAfterOperator
 AlignTrailingComments: true
 AlignAfterOpenBracket: Align
 
-# Allowed shortenings
-AllowShortBlocksOnASingleLine: true
-AllowShortFunctionsOnASingleLine: All
-AllowShortIfStatementsOnASingleLine: Always
-AllowShortLoopsOnASingleLine: true
-BreakBeforeBraces: Attach
+BreakBeforeBraces: Allman
 
 BreakConstructorInitializers: BeforeComma
 DerivePointerAlignment: false

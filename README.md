@@ -11,4 +11,4 @@ make -j$(nprocs)
 ```
 
 ## Running the project
-`./build/main`
+`./build/src/opengl_program`

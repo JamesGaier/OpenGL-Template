@@ -1,18 +1,11 @@
 cmake_minimum_required(VERSION 3.20)
-project(Template)
-include_directories(include)
+project(Template LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-add_executable(main src/main.cpp)
-
-target_link_libraries(
-    main
-    PRIVATE
-    glad
-    glfw
-    glm
-)
+include_directories(include)
 
 add_subdirectory(external)
+
+add_subdirectory(src)

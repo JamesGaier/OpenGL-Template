@@ -1,0 +1,37 @@
+# Documentation: https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+# Formatting
+ColumnLimit: 100
+IndentWidth: 4
+NamespaceIndentation: All
+TabWidth: 4
+UseTab: Never
+
+MaxEmptyLinesToKeep: 1
+
+# Alignment checks
+AlignOperands: AlignAfterOperator
+AlignTrailingComments: true
+AlignAfterOpenBracket: Align
+
+BreakBeforeBraces: Allman
+
+BreakConstructorInitializers: BeforeComma
+DerivePointerAlignment: false
+PointerAlignment: Middle
+
+BreakBeforeBinaryOperators: All
+BreakBeforeTernaryOperators: true
+
+SpaceAfterTemplateKeyword: false
+SpaceBeforeAssignmentOperators: true
+
+SortIncludes: true
+SortUsingDeclarations: true
+
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex: '^".*\.h"'
+    Priority: 1
+  - Regex: '<[[:alnum:].]+>'
+    Priority: 2
+
